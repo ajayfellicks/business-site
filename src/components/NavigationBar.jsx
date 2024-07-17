@@ -20,7 +20,7 @@ const NavigationBar = () => {
               Estatein
             </Link>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <ul className="flex">
               <li>
                 <NavLink
@@ -59,14 +59,14 @@ const NavigationBar = () => {
               </li>
             </ul>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <button className="bg-grey-8 px-[2rem] py-[1.4rem] rounded-xl border-solid border-[1px] border-grey-15 hover:bg-grey-10 hover:border-grey-30 ">
               <Link to="/contact" className="text-white100 text-2xl ">
                 Contact Us
               </Link>
             </button>
           </div>
-          <div className="block md:hidden">
+          <div className="block lg:hidden">
             {menuBtn ? (
               <img
                 onClick={() => {
@@ -89,7 +89,7 @@ const NavigationBar = () => {
           </div>
         </div>
       </div>
-      <div className=" block md:hidden bg-grey-10">
+      <div className=" block lg:hidden bg-grey-10">
         {!menuBtn && (
           <ul className="mx-10">
             <li className="py-10 hover:bg-grey-15 pl-5">

@@ -6,10 +6,10 @@ import SubContainer from "../../assets/SubContainer.png";
 const Testimonials = ({ testData }) => {
   const [page, setPage] = useState(1);
   return (
-    <div>
+    <div className="xl:w-[80%] xl:mx-auto">
       <div className="mx-10 mt-40 mb-20">
         <h1 className="font-semibold text-[3rem] mb-5">What Our Clients Say</h1>
-        <p className="font-medium text-[2rem]  text-grey-60 mb-10 md:mb-20">
+        <p className="font-medium text-[2rem]  text-grey-60 mb-10 lg:mb-20">
           Read the success stories and heartfelt testimonials from our valued
           clients. Discover why they chose Estatein for their real estate needs.
         </p>
@@ -18,7 +18,7 @@ const Testimonials = ({ testData }) => {
         return (
           <div
             key={index}
-            className="p-10 border-solid border-[1px] border-grey-15 flex flex-col m-10 rounded-[2rem] md:hidden"
+            className="p-10 border-solid border-[1px] border-grey-15 flex flex-col m-10 rounded-[2rem] lg:hidden"
           >
             <div className="flex gap-x-6 mb-10">
               <img src={SubContainer} alt="" />
@@ -30,7 +30,7 @@ const Testimonials = ({ testData }) => {
             <h1 className="font-semibold text-[2.5rem] mb-5">
               {element.title}
             </h1>
-            <p className="font-medium text-[1.5rem]  mb-10 md:mb-20">
+            <p className="font-medium text-[1.5rem]  mb-10 lg:mb-20">
               {element.description}
             </p>
             <div className="flex items-center">
@@ -49,7 +49,7 @@ const Testimonials = ({ testData }) => {
           </div>
         );
       })}
-      <div className="hidden md:grid md:grid-cols-3">
+      <div className="hidden lg:grid lg:grid-cols-3">
         {testData.slice(page * 3 - 3, page * 3).map((element, index) => {
           return (
             <div
@@ -63,8 +63,8 @@ const Testimonials = ({ testData }) => {
                 <img src={SubContainer} alt="" />
                 <img src={SubContainer} alt="" />
               </div>
-              <h1 className="text-5xl font-semibold mb-8">{element.title}</h1>
-              <p className="text-4xl font-medium mb-8 leading-[3.5rem]">
+              <h1 className="text-4xl font-semibold mb-8">{element.title}</h1>
+              <p className="text-3xl font-medium mb-8 leading-[3.5rem]">
                 {element.description}
               </p>
               <div className="flex items-center">
@@ -85,8 +85,8 @@ const Testimonials = ({ testData }) => {
         })}
       </div>
 
-      <div className="mx-10 flex justify-between md:hidden">
-        <button className="bg-main px-[2rem]  py-[1rem] md:py-[1.5rem] md:px-[1.5rem] rounded-xl border-solid border-[1px] border-grey-15 hover:bg-grey-8 hover:border-grey-20 text-2xl">
+      <div className="mx-10 flex justify-between lg:hidden">
+        <button className="bg-main px-[2rem]  py-[1rem] lg:py-[1.5rem] lg:px-[1.5rem] rounded-xl border-solid border-[1px] border-grey-15 hover:bg-grey-8 hover:border-grey-20 text-2xl">
           View All Properties
         </button>
         <div className="flex items-center gap-5">
@@ -124,8 +124,8 @@ const Testimonials = ({ testData }) => {
           )}
         </div>
       </div>
-      <div className="mx-10 hidden md:flex md:justify-between">
-        <button className="bg-main px-[4rem]  py-[2rem] md:py-[1.5rem] md:px-[1.5rem] rounded-xl border-solid border-[1px] border-grey-15 hover:bg-grey-8 hover:border-grey-20 text-3xl">
+      <div className="mx-10 hidden lg:flex lg:justify-between">
+        <button className="bg-main px-[4rem]  py-[2rem] lg:py-[1.5rem] lg:px-[1.5rem] rounded-xl border-solid border-[1px] border-grey-15 hover:bg-grey-8 hover:border-grey-20 text-3xl">
           View All Testimonials
         </button>
         <div className="flex items-center gap-5">

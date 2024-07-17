@@ -9,10 +9,10 @@ const PropertiesComp = ({ data }) => {
   const [page, setPage] = useState(1);
 
   return (
-    <div>
+    <div className="xl:w-[80%] xl:mx-auto">
       <div className="mx-10 mt-40 mb-20">
         <h1 className="font-semibold text-[3rem] mb-5">Featured Properties</h1>
-        <p className="font-medium text-[2rem]  text-grey-60 mb-10 md:mb-20 ">
+        <p className="font-medium text-[2rem]  text-grey-60 mb-10 lg:mb-20 ">
           Explore our handpicked selection of featured properties. Each listing
           offers a glimpse into exceptional homes and investments available
           through Estatein.
@@ -22,12 +22,12 @@ const PropertiesComp = ({ data }) => {
         return (
           <div
             key={index}
-            className="p-10 border-solid border-[1px] border-grey-15 flex flex-col m-10 rounded-[1rem] md:hidden"
+            className="p-10 border-solid border-[1px] border-grey-15 flex flex-col m-10 rounded-[1rem] lg:hidden"
           >
             <img src={element.image} alt="FeaturedImage" className="mb-8" />
             <h1 className="font-semibold text-[2rem] mb-5">{element.title}</h1>
             <p className="mb-8">
-              <span className="font-medium text-[1.5rem]  text-grey-60 mb-10 md:mb-20 ">
+              <span className="font-medium text-[1.5rem]  text-grey-60 mb-10 lg:mb-20 ">
                 {element.about}...
               </span>
               <a className="text-[1.5rem] font-medium underline cursor-pointer ">
@@ -60,7 +60,7 @@ const PropertiesComp = ({ data }) => {
           </div>
         );
       })}
-      <div className="hidden md:grid md:grid-cols-3">
+      <div className="hidden lg:grid lg:grid-cols-3">
         {data.slice(page * 3 - 3, page * 3).map((element, index) => {
           return (
             <div
@@ -68,38 +68,38 @@ const PropertiesComp = ({ data }) => {
               className="p-10 border-solid border-[1px] border-grey-15 m-10 rounded-[2rem] flex flex-col"
             >
               <img src={element.image} alt="FeaturedImage" className="mb-8" />
-              <h1 className="text-5xl font-semibold mb-8">{element.title}</h1>
+              <h1 className="text-4xl font-semibold mb-8">{element.title}</h1>
               <p className="mb-8">
-                <span className="text-3xl font-medium text-grey-60 ">
+                <span className="text-2xl font-medium text-grey-60 ">
                   {element.about}...
                 </span>
-                <a className="text-3xl font-medium underline cursor-pointer">
+                <a className="text-2xl font-medium underline cursor-pointer">
                   Read More
                 </a>
               </p>
 
               <div className="grid grid-cols-[auto_auto_auto]  gap-5 mb-8">
                 <div className="flex items-center justify-center bg-grey-10 border-solid border-[1px] border-grey-15  py-5 rounded-[50px]">
-                  <img src={bed} alt="bed" className="mr-4" />
-                  <p className="text-3xl font-medium">4-Bedroom</p>
+                  <img src={bed} alt="bed" className="mr-4 w-5" />
+                  <p className="text-2xl font-medium">4-Bedroom</p>
                 </div>
                 <div className="flex items-center justify-center bg-grey-10 border-solid border-[1px] border-grey-15 py-5 rounded-[50px]">
-                  <img src={bath} alt="bath" className="mr-4" />
-                  <p className="text-3xl font-medium">3-Bathroom</p>
+                  <img src={bath} alt="bath" className="mr-4 w-5" />
+                  <p className="text-2xl font-medium">3-Bathroom</p>
                 </div>
                 <div className="flex items-center justify-center bg-grey-10 border-solid border-[1px] border-grey-15 py-5 rounded-[50px]">
-                  <img src={villa} alt="villa" className="mr-4" />
-                  <p className="text-3xl font-medium">Villa</p>
+                  <img src={villa} alt="villa" className="mr-4 w-5" />
+                  <p className="text-2xl font-medium">Villa</p>
                 </div>
               </div>
               <div className="flex justify-between">
                 <div>
-                  <p className="text-3xl text-grey-60 font-medium mb-2">
+                  <p className="text-2xl text-grey-60 font-medium mb-2">
                     Price
                   </p>
-                  <h1 className="text-5xl font-semibold">$550,000</h1>
+                  <h1 className="text-4xl font-semibold">$550,000</h1>
                 </div>
-                <button className="bg-purple-60 px-[4rem] py-[2rem]  rounded-2xl border-solid border-[1px] border-purple-70 hover:bg-purple-70 hover:border-purple-60 text-3xl">
+                <button className="bg-purple-60 px-[3rem] py-[1.5rem]  rounded-2xl border-solid border-[1px] border-purple-70 hover:bg-purple-70 hover:border-purple-60 text-2xl">
                   View Property Details
                 </button>
               </div>
@@ -107,8 +107,8 @@ const PropertiesComp = ({ data }) => {
           );
         })}
       </div>
-      <div className="mx-10 flex justify-between md:hidden">
-        <button className="bg-main px-[2rem]  py-[1rem] md:py-[1.5rem] md:px-[1.5rem] rounded-xl border-solid border-[1px] border-grey-15 hover:bg-grey-8 hover:border-grey-20 text-2xl">
+      <div className="mx-10 flex justify-between lg:hidden">
+        <button className="bg-main px-[2rem]  py-[1rem] lg:py-[1.5rem] lg:px-[1.5rem] rounded-xl border-solid border-[1px] border-grey-15 hover:bg-grey-8 hover:border-grey-20 text-2xl">
           View All Properties
         </button>
         <div className="flex items-center gap-5">
@@ -146,8 +146,8 @@ const PropertiesComp = ({ data }) => {
           )}
         </div>
       </div>
-      <div className="mx-10 hidden md:flex md:justify-between">
-        <button className="bg-main px-[4rem]  py-[2rem] md:py-[1.5rem] md:px-[1.5rem] rounded-xl border-solid border-[1px] border-grey-15 hover:bg-grey-8 hover:border-grey-20 text-3xl">
+      <div className="mx-10 hidden lg:flex lg:justify-between">
+        <button className="bg-main px-[4rem]  py-[2rem] lg:py-[1.5rem] lg:px-[1.5rem] rounded-xl border-solid border-[1px] border-grey-15 hover:bg-grey-8 hover:border-grey-20 text-3xl">
           View All Properties
         </button>
         <div className="flex items-center gap-5">
