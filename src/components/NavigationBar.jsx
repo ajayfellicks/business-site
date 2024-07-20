@@ -92,30 +92,34 @@ const NavigationBar = () => {
       <div className=" block lg:hidden bg-grey-10">
         {!menuBtn && (
           <ul className="mx-10">
-            <li className="py-10 hover:bg-grey-15 pl-5">
-              <Link to="/" className="text-white100 text-2xl ">
+            <Link to="/">
+              <li className="py-10 hover:bg-grey-15 pl-5 text-white100 text-2xl">
                 Home
-              </Link>
-            </li>
+              </li>
+            </Link>
+
             <hr />
-            <li className="py-10 hover:bg-grey-15 pl-5">
-              <Link to="/about" className="text-white100 text-2xl ">
+
+            <Link to="/about">
+              <li className="py-10 hover:bg-grey-15 pl-5 text-white100 text-2xl ">
                 About Us
-              </Link>
-            </li>
+              </li>
+            </Link>
             <hr />
-            <li className="py-10 hover:bg-grey-15 pl-5">
-              <Link to="/properties" className="text-white100 text-2xl">
+            <Link to="/properties">
+              <li className="py-10 hover:bg-grey-15 pl-5 text-white100 text-2xl">
                 Properties
-              </Link>
-            </li>
+              </li>
+            </Link>
             <hr />
-            <li className="py-10 hover:bg-grey-15 pl-5">
-              <Link to="/services" className="text-white100 text-2xl">
+
+            <Link to="/services">
+              <li className="py-10 hover:bg-grey-15 pl-5 text-white100 text-2xl">
                 Services
-              </Link>
-            </li>
+              </li>
+            </Link>
             <hr />
+
             <button className="py-10 pl-5 font-bold">
               <Link to="/contact" className="text-white100 text-2xl ">
                 Contact Us
