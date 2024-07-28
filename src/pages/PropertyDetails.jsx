@@ -1,9 +1,10 @@
 import React from "react";
+import Testimonials from "../components/Home Comp/Testimonials";
 
-const PropertyDetails = () => {
+const PropertyDetails = ({ testData }) => {
   return (
     <div>
-      <h1 className="text-7xl">PropertyDetails</h1>
+      <Testimonials testData={testData} />
     </div>
   );
 };
