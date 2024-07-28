@@ -10,7 +10,7 @@ const PropertiesComp = ({ data }) => {
 
   return (
     <div className="xl:w-[80%] xl:mx-auto">
-      <div className="mx-10 mt-40 mb-20">
+      <div className="mx-10 mt-20 mb-20">
         <h1 className="font-semibold text-[3rem] mb-5">Featured Properties</h1>
         <p className="font-medium text-[2rem]  text-grey-60 mb-10 lg:mb-20 ">
           Explore our handpicked selection of featured properties. Each listing
