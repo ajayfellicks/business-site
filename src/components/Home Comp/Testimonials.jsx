@@ -7,7 +7,7 @@ const Testimonials = ({ testData }) => {
   const [page, setPage] = useState(1);
   return (
     <div className="xl:w-[80%] xl:mx-auto">
-      <div className="mx-10 mt-40 mb-20">
+      <div className="mx-10 mt-20 mb-20">
         <h1 className="font-semibold text-[3rem] mb-5">What Our Clients Say</h1>
         <p className="font-medium text-[2rem]  text-grey-60 mb-10 lg:mb-20">
           Read the success stories and heartfelt testimonials from our valued

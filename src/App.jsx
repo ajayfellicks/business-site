@@ -260,18 +260,68 @@ const App = () => {
       profileAdd: "USA, Nevada",
     },
   ];
+  const faqData = [
+    {
+      title: "How do I search for properties on Estatein?",
+      description:
+        "Learn how to use our user-friendly search tools to find properties that match your criteria.",
+    },
+    {
+      title: "What documents do I need to sell my property through Estatein?",
+      description:
+        "Find out about the necessary documentation for listing your property with us.",
+    },
+    {
+      title: "How can I contact an Estatein agent?",
+      description:
+        "Discover the different ways you can get in touch with our experienced agents.",
+    },
+    {
+      title: "How do I search for properties on Estatein?2",
+      description:
+        "Learn how to use our user-friendly search tools to find properties that match your criteria.",
+    },
+    {
+      title: "What documents do I need to sell my property through Estatein?2",
+      description:
+        "Find out about the necessary documentation for listing your property with us.",
+    },
+    {
+      title: "How can I contact an Estatein agent?2",
+      description:
+        "Discover the different ways you can get in touch with our experienced agents.",
+    },
+    {
+      title: "How do I search for properties on Estatein?3",
+      description:
+        "Learn how to use our user-friendly search tools to find properties that match your criteria.",
+    },
+    {
+      title: "What documents do I need to sell my property through Estatein?3",
+      description:
+        "Find out about the necessary documentation for listing your property with us.",
+    },
+    {
+      title: "How can I contact an Estatein agent?3",
+      description:
+        "Discover the different ways you can get in touch with our experienced agents.",
+    },
+  ];
   return (
     <div className="bg-main 4xl:mx-auto 4xl:w-[75%]">
       <NavigationBar />
       <Routes>
-        <Route path="/" element={<Home data={data} testData={testData} />} />
+        <Route
+          path="/"
+          element={<Home data={data} testData={testData} faqData={faqData} />}
+        />
         <Route path="/about" element={<About />} />
         <Route path="/properties" element={<Properties data={data} />} />
         <Route
           path="/properties/propertyDetails"
           element={<PropertyDetails testData={testData} />}
         />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<Services faqData={faqData} />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

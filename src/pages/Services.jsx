@@ -8,8 +8,9 @@ import ValueIcon from "../assets/ValueIcon.png";
 import StrategicIcon from "../assets/StrategicIcon.png";
 import NegotiationIcon from "../assets/NegotiationIcon.png";
 import ClosingIcon from "../assets/ClosingIcon.png";
+import FAQ from "../components/Home Comp/FAQ";
 
-const Services = () => {
+const Services = ({ faqData }) => {
   return (
     <div>
       <div className="bg-[linear-gradient(90deg,_rgba(25,25,25,1)_0%,_rgba(13,13,13,1)_38%)] p-16 lg:p-36">
@@ -19,7 +20,7 @@ const Services = () => {
         <p className="font-medium text-[2rem]  text-grey-60 ">
           Welcome to Estatein, where your real estate aspirations meet expert
           guidance. Explore our comprehensive range of services, each designed
-          to cater to your unique needs and dreams.
+          to cater to your unique <br /> needs and dreams.
         </p>
       </div>
       <div className="border-solid border-[1px] border-grey-15 p-8 m-10">
@@ -192,6 +193,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <FAQ faqData={faqData} />
     </div>
   );
 };
