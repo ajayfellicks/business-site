@@ -82,8 +82,156 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="xl:w-[80%] xl:mx-auto ">
-        <div className="lg:p-24 bg-grey-10 rounded-2xl p-10 mx-10">
+      <div className="xl:w-[80%] xl:mx-auto mt-20">
+        <div className="mt-14 lg:m-0 mx-10">
+          <form className="border-solid border-[1px] border-grey-15 lg:p-28 p-10 rounded-2xl">
+            <div className="grid lg:grid-cols-[1fr_1fr_1fr] lg:grid-rows-[1fr_1fr_auto] lg:gap-8">
+              <div className="flex flex-col lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2">
+                <label className="text-2xl font-semibold p-[1.3rem] pl-0 ">
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder="Enter First Name"
+                  required
+                  className="text-2xl font-semibold p-[1.3rem] bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                />
+              </div>
+              <div className="flex flex-col lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2">
+                <label className="text-2xl font-semibold p-[1.3rem] pl-0 ">
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Enter Last Name"
+                  required
+                  className="text-2xl font-semibold p-[1.3rem] bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                />
+              </div>
+              <div className="flex flex-col lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2">
+                <label className="text-2xl font-semibold p-[1.3rem] pl-0 ">
+                  Email
+                </label>
+                <input
+                  type="text"
+                  name="Email"
+                  placeholder="Enter Your Email"
+                  required
+                  className="text-2xl font-semibold p-[1.3rem] bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                />
+              </div>
+              <div className="flex flex-col lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3">
+                <label className="text-2xl font-semibold p-[1.3rem] pl-0 ">
+                  Phone
+                </label>
+                <input
+                  type="text"
+                  name="Phone"
+                  placeholder="Phone"
+                  required
+                  className="text-2xl font-semibold p-[1.3rem] bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                />
+              </div>
+              <div className="flex flex-col lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3">
+                <label className="text-2xl font-semibold p-[1.3rem] pl-0">
+                  Inquiry Type
+                </label>
+                <select className="text-grey-60 text-2xl font-semibold p-[1.3rem] bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15">
+                  <option className="text-2xl font-semibold   bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15">
+                    Select Inquiry Type
+                  </option>
+                  <option
+                    className="text-2xl font-semibold bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                    value="Problem-Based Inquiry"
+                  >
+                    Problem-Based Inquiry
+                  </option>
+                  <option
+                    className="text-2xl font-semibold  bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                    value="Guided Inquiry"
+                  >
+                    Guided Inquiry
+                  </option>
+                  <option
+                    className="text-2xl font-semibold  bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                    value="Open-Ended Inquiry"
+                  >
+                    Open-Ended Inquiry
+                  </option>
+                  <option
+                    className="text-2xl font-semibold  bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                    value="Structured Inquiry"
+                  >
+                    Structured Inquiry
+                  </option>
+                </select>
+              </div>
+              <div className="flex flex-col lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3">
+                <label className="text-2xl font-semibold p-[1.3rem] pl-0">
+                  How Did You Hear About Us?
+                </label>
+                <select className=" text-grey-60 text-2xl font-semibold p-[1.3rem] bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15">
+                  <option className="text-2xl font-semibold  bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15">
+                    Select
+                  </option>
+                  <option
+                    className="text-2xl font-semibold bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                    value="faacebook"
+                  >
+                    Facebook
+                  </option>
+                  <option
+                    className="text-2xl font-semibold  bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                    value="tv"
+                  >
+                    tv
+                  </option>
+                  <option
+                    className="text-2xl font-semibold  bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                    value="poster"
+                  >
+                    poster
+                  </option>
+                </select>
+              </div>
+
+              <div className="flex flex-col lg:col-start-1 lg:col-end-4 lg:row-start-3 lg:row-end-4">
+                <label className="text-2xl font-semibold p-[1.3rem] pl-0 ">
+                  Message
+                </label>
+                <textarea
+                  id="description"
+                  className="text-2xl font-semibold p-[1.3rem] bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                  placeholder="Enter your Message here.."
+                />
+              </div>
+            </div>
+            <div className="flex lg:justify-between lg:items-center lg:mt-20 lg:flex-row flex-col">
+              <div>
+                <input
+                  type="checkbox"
+                  id="Terms"
+                  name="Terms"
+                  value="Terms"
+                  className=" mt-8 lg:mt-0 p-[1.3rem] bg-grey-10 rounded-xl border-solid border-[1px] border-grey-15"
+                ></input>
+                <label className="text-2xl font-semibold p-[1.3rem] pl-0  ml-5">
+                  I agree with Terms of Use and Privacy Policy
+                </label>
+              </div>
+
+              <button className=" text-2xl mt-8 lg:mt-0  bg-purple-60 px-[1rem]  py-[1rem]  rounded-xl border-solid border-[1px] border-purple-70 hover:bg-purple-70 hover:border-purple-60 ">
+                Send Your Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div className="xl:w-[80%] xl:mx-auto mt-20">
+        <div className="lg:p-24 bg-grey-10 rounded-2xl p-10 mx-10 lg:mx-0">
           <div className="grid lg:grid-cols-[1fr_1fr_1fr_1fr] lg:grid-rows-[auto_auto_auto] gap-y-4 lg:gap-8 ">
             <div className="lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2 ">
               <img src={C1} alt="" />

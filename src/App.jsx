@@ -5,7 +5,7 @@ import Home from "../src/pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
-import PropertyDetails from "./pages/PropertyDetails";
+
 import Properties from "./pages/Properties";
 import Footer from "./components/Footer";
 import FeaturedImage1 from "./assets/Featured-Image1.png";
@@ -317,10 +317,7 @@ const App = () => {
         />
         <Route path="/about" element={<About />} />
         <Route path="/properties" element={<Properties data={data} />} />
-        <Route
-          path="/properties/propertyDetails"
-          element={<PropertyDetails testData={testData} />}
-        />
+
         <Route path="/services" element={<Services faqData={faqData} />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

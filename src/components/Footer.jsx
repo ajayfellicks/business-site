@@ -33,7 +33,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="z-20 lg:flex lg:justify-center lg:items-center grid mb-20">
-            <button className=" text-2xl lg:px-5 bg-purple-60  py-[1rem] mt-20 mx-8 rounded-2xl border-solid border-[1px] border-purple-70 hover:bg-purple-70 hover:border-purple-60 ">
+            <button className=" text-2xl lg:px-5 bg-purple-60  py-[1rem] mt-20 mx-8 rounded-xl border-solid border-[1px] border-purple-70 hover:bg-purple-70 hover:border-purple-60 ">
               Explore Properties
             </button>
           </div>
